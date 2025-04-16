@@ -9,111 +9,109 @@
 </head>
 
 <body>
+    <!-- Header con navegación accesible -->
+    <header role="banner">
+        <section class="container header-container">
+            <h1 class="logo">
+                <a href="#">FIFINE</a>
+            </h1>
+            <nav role="navigation" aria-label="Menú principal">
+                <ul class="nav-menu">
+                    <li><a href="#microfonos">Micrófonos</a></li>
+                    <li><a href="#audifonos">Audífonos</a></li>
+                    <li><a href="#teclados">Teclados</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </nav>
+            <nav class="utility-nav" aria-label="Menú de utilidades">
+                <a href="#carrito">Carrito</a>
+                <a href="#login">Login</a>
+            </nav>
+        </section>
+    </header>
 
-    <body>
-        <!-- Header con navegación accesible -->
-        <header role="banner">
-            <section class="container header-container">
-                <h1 class="logo">
-                    <a href="#">FIFINE</a>
-                </h1>
-                <nav role="navigation" aria-label="Menú principal">
-                    <ul class="nav-menu">
-                        <li><a href="#microfonos">Micrófonos</a></li>
-                        <li><a href="#audifonos">Audífonos</a></li>
-                        <li><a href="#teclados">Teclados</a></li>
-                        <li><a href="#faq">FAQ</a></li>
+    <!-- Contenido principal -->
+    <main role="main">
+        <article class="container">
+            <!-- Sección Hero -->
+            <section id="hero" class="hero">
+                <header class="hero-header">
+                    <h2>FIFINE AM8</h2>
+                    <p>No encontrarás nada mejor a este precio</p>
+                </header>
+
+                <section class="hero-content">
+                    <article class="product-info">
+                        <h3>Calidad de Audio Profesional</h3>
+                        <p>El micrófono perfecto para streamers, podcasters y creadores de contenido que buscan una
+                            calidad de sonido excepcional.</p>
+                        <ul class="feature-list">
+                            <li>Patrón polar cardioide para captura de voz cristalina</li>
+                            <li>Puerto USB-C para conexión rápida sin necesidad de interfaces</li>
+                            <li>Control de ganancia incorporado para ajustes en tiempo real</li>
+                        </ul>
+                    </article>
+                    <figure class="product-image">
+                        <img src="./img/MICROFONO.jpg" alt="">
+                    </figure>
+                </section>
+
+                <section class="price-section">
+                    <p class="price">Solo por hoy a 99$</p>
+                    <p>Envios a todo el Perú</p>
+                </section>
+
+                <section class="payment-methods">
+                    <h3>Métodos de pago aceptados</h3>
+                    <figure class="payment-icons">
+                        <figure class="payment-icon"><img src="./img/yape.png" alt=""></figure>
+                        <figure class="payment-icon"><img src="./img/plin.png" alt=""></figure>
+                        <figure class="payment-icon"><img src="./img/visa.png" alt=""></figure>
+                        <figure class="payment-icon"><img src="./img/mastercard.png" alt=""></figure>
+                    </figure>
+                </section>
+
+                <section class="cta-container">
+                    <a href="#comprar" class="btn btn-large">Comprar Ahora</a>
+                </section>
+            </section>
+        </article>
+    </main>
+
+    <!-- Footer con información de contacto -->
+    <footer role="contentinfo">
+        <section class="container">
+            <section class="footer-content">
+                <article>
+                    <h3>Contacto</h3>
+                    <ul class="contact-info">
+                        <li>Email: <a href="mailto:soporte@fifine.com">soporte@fifine.com</a></li>
+                        <li>Teléfono: <a href="tel:+123456789">+1 (234) 567-890</a></li>
+                        <li>Horario de atención: Lunes a Viernes, 9:00 - 18:00</li>
                     </ul>
-                </nav>
-                <nav class="utility-nav" aria-label="Menú de utilidades">
-                    <a href="#carrito">Carrito</a>
-                    <a href="#login">Login</a>
-                </nav>
+                </article>
+
+                <article>
+                    <h3>Enlaces importantes</h3>
+                    <ul>
+                        <li><a href="#terminos">Términos y condiciones</a></li>
+                        <li><a href="#privacidad">Política de privacidad</a></li>
+                        <li><a href="#devoluciones">Política de devoluciones</a></li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>Síguenos</h3>
+                    <nav class="social-links" aria-label="Redes sociales">
+                        <a href="#facebook" aria-label="Facebook">FB</a>
+                        <a href="#twitter" aria-label="Twitter">TW</a>
+                        <a href="#instagram" aria-label="Instagram">IG</a>
+                        <a href="#youtube" aria-label="YouTube">YT</a>
+                    </nav>
+                </article>
             </section>
-        </header>
-
-        <!-- Contenido principal -->
-        <main role="main">
-            <article class="container">
-                <!-- Sección Hero -->
-                <section id="hero" class="hero">
-                    <header class="hero-header">
-                        <h2>FIFINE AM8</h2>
-                        <p>No encontrarás nada mejor a este precio</p>
-                    </header>
-
-                    <section class="hero-content">
-                        <article class="product-info">
-                            <h3>Calidad de Audio Profesional</h3>
-                            <p>El micrófono perfecto para streamers, podcasters y creadores de contenido que buscan una
-                                calidad de sonido excepcional.</p>
-                            <ul class="feature-list">
-                                <li>Patrón polar cardioide para captura de voz cristalina</li>
-                                <li>Puerto USB-C para conexión rápida sin necesidad de interfaces</li>
-                                <li>Control de ganancia incorporado para ajustes en tiempo real</li>
-                            </ul>
-                        </article>
-                        <figure class="product-image">
-                            <img src="./img/MICROFONO.jpg" alt="">
-                        </figure>
-                    </section>
-
-                    <section class="price-section">
-                        <p class="price">Solo por hoy a 99$</p>
-                        <p>Envios a todo el Perú</p>
-                    </section>
-
-                    <section class="payment-methods">
-                        <h3>Métodos de pago aceptados</h3>
-                        <figure class="payment-icons">
-                            <figure class="payment-icon"><img src="./img/yape.png" alt=""></figure>
-                            <figure class="payment-icon"><img src="./img/plin.png" alt=""></figure>
-                            <figure class="payment-icon"><img src="./img/visa.png" alt=""></figure>
-                            <figure class="payment-icon"><img src="./img/mastercard.png" alt=""></figure>
-                        </figure>
-                    </section>
-
-                    <section class="cta-container">
-                        <a href="#comprar" class="btn btn-large">Comprar Ahora</a>
-                    </section>
-                </section>
-            </article>
-        </main>
-
-        <!-- Footer con información de contacto -->
-        <footer role="contentinfo">
-            <section class="container">
-                <section class="footer-content">
-                    <article>
-                        <h3>Contacto</h3>
-                        <ul class="contact-info">
-                            <li>Email: <a href="mailto:soporte@fifine.com">soporte@fifine.com</a></li>
-                            <li>Teléfono: <a href="tel:+123456789">+1 (234) 567-890</a></li>
-                            <li>Horario de atención: Lunes a Viernes, 9:00 - 18:00</li>
-                        </ul>
-                    </article>
-
-                    <article>
-                        <h3>Enlaces importantes</h3>
-                        <ul>
-                            <li><a href="#terminos">Términos y condiciones</a></li>
-                            <li><a href="#privacidad">Política de privacidad</a></li>
-                            <li><a href="#devoluciones">Política de devoluciones</a></li>
-                        </ul>
-                    </article>
-
-                    <article>
-                        <h3>Síguenos</h3>
-                        <nav class="social-links" aria-label="Redes sociales">
-                            <a href="#facebook" aria-label="Facebook">FB</a>
-                            <a href="#twitter" aria-label="Twitter">TW</a>
-                            <a href="#instagram" aria-label="Instagram">IG</a>
-                            <a href="#youtube" aria-label="YouTube">YT</a>
-                        </nav>
-                    </article>
-                </section>
-            </section>
-        </footer>
-    </body>
+        </section>
+    </footer>
+</body>
 
 </html>
