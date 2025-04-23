@@ -336,3 +336,66 @@ footer {
         width: 100%;
     }
 }
+
+
+/* ====== Layout general con Grid para testimonios y compra ====== */
+.grid-layout {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "aside main"
+      "footer footer";
+    grid-template-columns: 250px 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Áreas de Grid */
+  header   { grid-area: header; }
+  aside    { grid-area: aside; }
+  main     { grid-area: main; }
+  footer   { grid-area: footer; }
+  
+  /* Estilos generales */
+  header, aside, main, footer {
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+  }
+  
+  /* Testimonios en tarjetas */
+  .testimonios {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: #f9f9f9;
+    border-radius: var(--border-radius);
+    padding: 15px;
+    width: calc(33.33% - 20px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  .card h3 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+  }
+  
+  /* Responsive: 1 sola columna en pantallas pequeñas */
+  @media (max-width: 768px) {
+    .grid-layout {
+      grid-template-areas:
+        "header"
+        "aside"
+        "main"
+        "footer";
+      grid-template-columns: 1fr;
+    }
+  
+    .card {
+      width: 100%;
+    }
+  }
