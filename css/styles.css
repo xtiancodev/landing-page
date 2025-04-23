@@ -3,14 +3,6 @@
     padding: 0;
 }
 
-/* CSS Reset */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 
 /* Variables CSS */
 :root {
@@ -24,6 +16,7 @@
     --border-radius: 8px;
 }
 
+
 /* Estilos base */
 body {
     font-family: var(--font-main);
@@ -31,6 +24,13 @@ body {
     line-height: 1.5;
     color: var(--color-dark);
     background-color: var(--color-light);
+}
+
+/*MOD DEL LABORATORIO 02*/
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* para que se acomode mejor si el espacio no alcanza */
 }
 
 img {
@@ -91,6 +91,11 @@ header {
     z-index: 100;
 }
 
+/* Agrege overflow para que no se salgan los elementos*/
+.container {
+    overflow-x: hidden; /* evita scroll horizontal si algo se sale */
+}
+
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -148,10 +153,12 @@ nav a:focus {
     margin-bottom: 30px;
 }
 
+/*MOD DEL LABORATORIO 02 agrege wrap*/
 .hero-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     gap: 30px;
     margin-bottom: 30px;
 }
@@ -239,12 +246,13 @@ nav a:focus {
     margin-top: 30px;
 }
 
-/* Footer */
+/* Footer agrege flex para lab 02*/
 footer {
     background-color: var(--color-primary);
     color: white;
     padding: 40px 0;
     margin-top: 40px;
+    display: flex;
 }
 
 .footer-content {
@@ -278,12 +286,53 @@ footer {
     .hero-content {
         flex-direction: column;
     }
-
+    
     .nav-menu {
-        display: none;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
     }
-
+    
     .footer-content {
         flex-direction: column;
+    }
+    
+    /*Esto me ayudo chatgpt porque mi navegacion estaba amontonada*/
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+}
+
+
+/* Nueva seccion de la galeria de nuevos productos */
+
+.product-gallery {
+    text-align: center;
+    }
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.gallery img {
+    width: calc(25% - 15px);
+    border-radius: var(--border-radius);
+    object-fit: cover;
+}
+
+/* Media queries */
+@media (max-width: 992px) {
+    .gallery img {
+        width: calc(50% - 15px);
+    }
+}
+
+@media (max-width: 600px) {
+    .gallery img {
+        width: 100%;
     }
 }
