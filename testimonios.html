@@ -4,52 +4,70 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Testimonios</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
+<body class="bg-gray-100">
 
-  <div class="grid-layout">
-    <header>
-      <nav aria-label="Menú principal">
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="testimonios.html">Testimonios</a></li>
-          <li><a href="compra.html">Compra</a></li>
+
+
+  <div class="grid min-h-screen grid-cols-1 md:grid-cols-[250px_1fr] grid-rows-[auto_1fr_auto] gap-4 p-4">
+    
+    <header class="bg-white p-4 shadow rounded-md col-span-full">
+      <nav aria-label="Menú principal" class="flex justify-between items-center">
+        <ul class="flex gap-6">
+          <li><a href="index.html" class="text-gray-700 hover:text-blue-600">Inicio</a></li>
+          <li><a href="testimonios.html" class="text-gray-700 hover:text-blue-600">Testimonios</a></li>
+          <li><a href="compra.html" class="text-gray-700 hover:text-blue-600">Compra</a></li>
         </ul>
       </nav>
     </header>
 
-    <aside>
-      <h2>Filtros</h2>
-      <ul>
-        <li><label><input type="checkbox"> Solo 5 estrellas</label></li>
-        <li><label><input type="checkbox"> Con fotos</label></li>
-        <li><label><input type="checkbox"> Más recientes</label></li>
+    <aside class="bg-white p-4 shadow rounded-md">
+      <h2 class="text-xl font-semibold mb-4">Filtros</h2>
+      <ul class="flex flex-col gap-2">
+        <li><label class="flex items-center gap-2"><input type="checkbox"> Solo 5 estrellas</label></li>
+        <li><label class="flex items-center gap-2"><input type="checkbox"> Con fotos</label></li>
+        <li><label class="flex items-center gap-2"><input type="checkbox"> Más recientes</label></li>
       </ul>
     </aside>
 
-    <main>
-      <h1>Testimonios de Clientes</h1>
-      <section class="testimonios">
-        <article class="card">
-          <h3>Juan Pérez</h3>
-          <p>Excelente producto, calidad increíble por el precio. Lo recomiendo mucho.</p>
+    <main class="bg-white p-4 shadow rounded-md">
+      <h1 class="text-2xl font-bold mb-6 text-center">Testimonios de Clientes</h1>
+
+      <section class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        
+        <!-- Testimonio 1 -->
+        <article class="bg-gray-50 p-4 rounded-lg shadow">
+          <img src="./img/user1.jpg" alt="Foto de Juan Pérez" class="w-40 h-40 rounded-full mx-auto mb-4 object-cover">
+          <h3 class="text-xl font-semibold text-center">Juan Pérez</h3>
+          <p class="text-gray-600 text-center mt-2">Excelente producto, calidad increíble por el precio. ¡Lo recomiendo mucho!</p>
         </article>
-        <article class="card">
-          <h3>María López</h3>
-          <p>Me sorprendió la claridad del sonido. Ideal para streaming.</p>
+
+        <!-- Testimonio 2 -->
+        <article class="bg-gray-50 p-4 rounded-lg shadow">
+          <img src="./img/user2.jpg" alt="Foto de María López" class="w-40 h-40 rounded-full mx-auto mb-4 object-cover">
+          <h3 class="text-xl font-semibold text-center">María López</h3>
+          <p class="text-gray-600 text-center mt-2">Me sorprendió la claridad del sonido. Ideal para streaming.</p>
         </article>
-        <article class="card">
-          <h3>Pedro García</h3>
-          <p>Entrega rápida y atención al cliente muy buena.</p>
+
+        <!-- Testimonio 3 -->
+        <article class="bg-gray-50 p-4 rounded-lg shadow">
+          <img src="./img/user3.jpg" alt="Foto de Pedro García" class="w-40 h-40 rounded-full mx-auto mb-4 object-cover">
+          <h3 class="text-xl font-semibold text-center">Pedro García</h3>
+          <p class="text-gray-600 text-center mt-2">Entrega rápida y atención al cliente muy buena. ¡5 estrellas!</p>
         </article>
+
       </section>
+
     </main>
 
-    <footer>
-      <p>© 2025 FIFINE. Todos los derechos reservados.</p>
+    <footer class="bg-white p-4 shadow rounded-md col-span-full text-center">
+      <p class="text-gray-600">© 2025 FIFINE. Todos los derechos reservados.</p>
     </footer>
+
   </div>
 
 </body>
 </html>
+
+ 
